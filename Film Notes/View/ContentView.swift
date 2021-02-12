@@ -24,7 +24,7 @@ struct ContentView: View {
             VStack {
                 TextField("Note", text: $note)
                     .font(.title2)
-                    .padding(.horizontal, 18)
+                    .padding(.horizontal, 20)
                     
                 Spacer()
                                                             
@@ -41,7 +41,7 @@ struct ContentView: View {
                     }
                 }
                 .padding(.horizontal, 12.0)
-                .padding(.bottom, 45.0)
+                .padding(.bottom, 40.0)
                                 
                 HStack (alignment: .center) {
                     Button(action: {
@@ -55,8 +55,12 @@ struct ContentView: View {
                     }) {
                         Text("Add Frame")
                             .fontWeight(.medium)
+                            
                     }
+                    .buttonStyle(FilledButton())
                 }
+                .padding([.horizontal], 20)
+                .padding(.bottom, 10)
                                                                         
                 .navigationBarTitle(Text("f \(aperture) · s \(speed)"))
                 
@@ -73,6 +77,17 @@ struct ContentView: View {
             }
             .keyboardAdaptive()
         }
+    }
+}
+
+struct FilledButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration
+            .label
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+            .foregroundColor(configuration.isPressed ? Color.white.opacity(0.8) : .white)
+            .background(configuration.isPressed ? Color.accentColor.opacity(0.5) : Color.accentColor)
+            .cornerRadius(10)
     }
 }
 
