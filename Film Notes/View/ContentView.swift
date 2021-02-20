@@ -24,7 +24,7 @@ struct ContentView: View {
             VStack {
                 TextField("Note", text: $note)
                     .font(.title2)
-                    .padding(.horizontal, 20)
+                    .padding(.horizontal, 15)
                     
                 Spacer()
                                                             
@@ -33,14 +33,14 @@ struct ContentView: View {
                         Text($0)
                     }
                 }
-                .padding(.horizontal, 12.0)
+                .padding(.horizontal, 7.0)
                                     
                 Picker("Speed", selection: $speed) {
                     ForEach(speeds, id: \.self) {
                         Text($0)
                     }
                 }
-                .padding(.horizontal, 12.0)
+                .padding(.horizontal, 7.0)
                 .padding(.bottom, 40.0)
                                 
                 HStack (alignment: .center) {
@@ -59,7 +59,7 @@ struct ContentView: View {
                     }
                     .buttonStyle(FilledButton())
                 }
-                .padding([.horizontal], 20)
+                .padding([.horizontal], 16)
                 .padding(.bottom, 10)
                                                                         
                 .navigationBarTitle(Text("f \(aperture) · s \(speed)"))
@@ -87,7 +87,7 @@ struct FilledButton: ButtonStyle {
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
             .foregroundColor(configuration.isPressed ? Color.white.opacity(0.8) : .white)
             .background(configuration.isPressed ? Color.accentColor.opacity(0.5) : Color.accentColor)
-            .cornerRadius(10)
+            .cornerRadius(12)
     }
 }
 
