@@ -41,7 +41,6 @@ struct ContentView: View {
                     }
                 }
                 .padding(.horizontal, 7.0)
-                .padding(.bottom, 40.0)
                                 
                 HStack (alignment: .center) {
                     Button(action: {
@@ -60,7 +59,9 @@ struct ContentView: View {
                     .buttonStyle(FilledButton())
                 }
                 .padding([.horizontal], 16)
-                .padding(.bottom, 10)
+                .padding(.top, 8)
+                .padding(.bottom, 16)
+                
                                                                         
                 .navigationBarTitle(Text("f \(aperture) · s \(speed)"))
                 

@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A11663725CFEDB100BDA0CF /* Film Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Film Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A11663725CFEDB100BDA0CF /* Frame Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frame Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A11663A25CFEDB100BDA0CF /* Film_NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film_NotesApp.swift; sourceTree = "<group>"; };
 		4A11663C25CFEDB100BDA0CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A11663E25CFEDB100BDA0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		4A11663825CFEDB100BDA0CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A11663725CFEDB100BDA0CF /* Film Notes.app */,
+				4A11663725CFEDB100BDA0CF /* Frame Notes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,9 +106,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4A11663625CFEDB100BDA0CF /* Film Notes */ = {
+		4A11663625CFEDB100BDA0CF /* Frame Notes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A11664B25CFEDB100BDA0CF /* Build configuration list for PBXNativeTarget "Film Notes" */;
+			buildConfigurationList = 4A11664B25CFEDB100BDA0CF /* Build configuration list for PBXNativeTarget "Frame Notes" */;
 			buildPhases = (
 				4A11663325CFEDB100BDA0CF /* Sources */,
 				4A11663425CFEDB100BDA0CF /* Frameworks */,
@@ -118,9 +118,9 @@
 			);
 			dependencies = (
 			);
-			name = "Film Notes";
+			name = "Frame Notes";
 			productName = "Film Notes";
-			productReference = 4A11663725CFEDB100BDA0CF /* Film Notes.app */;
+			productReference = 4A11663725CFEDB100BDA0CF /* Frame Notes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4A11663225CFEDB100BDA0CF /* Build configuration list for PBXProject "Film Notes" */;
+			buildConfigurationList = 4A11663225CFEDB100BDA0CF /* Build configuration list for PBXProject "Frame Notes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A11663625CFEDB100BDA0CF /* Film Notes */,
+				4A11663625CFEDB100BDA0CF /* Frame Notes */,
 			);
 		};
 /* End PBXProject section */
@@ -308,6 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Film Notes/Preview Content\"";
 				DEVELOPMENT_TEAM = VL4332W7S7;
 				ENABLE_PREVIEWS = YES;
@@ -317,6 +318,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karanevsky.Film-Notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -330,6 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Film Notes/Preview Content\"";
 				DEVELOPMENT_TEAM = VL4332W7S7;
 				ENABLE_PREVIEWS = YES;
@@ -339,6 +342,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.karanevsky.Film-Notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -349,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A11663225CFEDB100BDA0CF /* Build configuration list for PBXProject "Film Notes" */ = {
+		4A11663225CFEDB100BDA0CF /* Build configuration list for PBXProject "Frame Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A11664925CFEDB100BDA0CF /* Debug */,
@@ -358,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A11664B25CFEDB100BDA0CF /* Build configuration list for PBXNativeTarget "Film Notes" */ = {
+		4A11664B25CFEDB100BDA0CF /* Build configuration list for PBXNativeTarget "Frame Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A11664C25CFEDB100BDA0CF /* Debug */,
