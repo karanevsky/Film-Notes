@@ -1,4 +1,3 @@
-
 import SwiftUI
 import CoreData
 import Combine
@@ -15,13 +14,13 @@ struct ContentView: View {
     @State var showingList = false
         
     let apertures = ["1.8", "2.8", "4", "5.6", "8", "11", "16"]
-    let speeds = ["B", "1", "2", "4", "8", "15", "30", "60", "125", "250", "500", "1000"]    
+    let speeds = ["B", "1", "2", "4", "8", "15", "30", "60", "125", "250", "500", "1000"]
         
     let generator = UINotificationFeedbackGenerator()
             
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 0)  {
                 TextField("Note", text: $note)
                     .font(.title2)
                     .padding(.horizontal, 15)
@@ -41,30 +40,25 @@ struct ContentView: View {
                     }
                 }
                 .padding(.horizontal, 7.0)
-                                
-                HStack (alignment: .center) {
-                    Button(action: {
-                        let newFrame = Frame(context: self.moc)
-                        newFrame.aperture = self.aperture
-                        newFrame.speed = self.speed
-                        newFrame.note = self.note
-                        try? self.moc.save()
-                        self.presentationMode.wrappedValue.dismiss()
-                        self.generator.notificationOccurred(.success)
-                    }) {
-                        Text("Add Frame")
-                            .fontWeight(.medium)
-                            
-                    }
-                    .buttonStyle(FilledButton())
+                                                
+                Button(action: {
+                    let newFrame = Frame(context: self.moc)
+                    newFrame.aperture = self.aperture
+                    newFrame.speed = self.speed
+                    newFrame.note = self.note
+                    try? self.moc.save()
+                    self.presentationMode.wrappedValue.dismiss()
+                    self.generator.notificationOccurred(.success)
+                }) {
+                    Text("Add Frame")
+                        .fontWeight(.medium)                        
                 }
+                .buttonStyle(FilledButton())
                 .padding([.horizontal], 16)
                 .padding(.top, 8)
                 .padding(.bottom, 16)
                 
-                                                                        
                 .navigationBarTitle(Text("f \(aperture) · s \(speed)"))
-                
                 .navigationBarItems(trailing:
                     Button(action: {
                         self.showingList.toggle()
