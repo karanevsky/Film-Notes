@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Film_NotesApp: App {
+struct FrameNotesApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {

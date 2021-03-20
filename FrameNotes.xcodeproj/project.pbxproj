@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A11663B25CFEDB100BDA0CF /* Film_NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11663A25CFEDB100BDA0CF /* Film_NotesApp.swift */; };
+		4A11663B25CFEDB100BDA0CF /* FrameNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11663A25CFEDB100BDA0CF /* FrameNotesApp.swift */; };
 		4A11663D25CFEDB100BDA0CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11663C25CFEDB100BDA0CF /* ContentView.swift */; };
 		4A11663F25CFEDB100BDA0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A11663E25CFEDB100BDA0CF /* Assets.xcassets */; };
 		4A11664225CFEDB100BDA0CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A11664125CFEDB100BDA0CF /* Preview Assets.xcassets */; };
@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		4A11663725CFEDB100BDA0CF /* Frame Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frame Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A11663A25CFEDB100BDA0CF /* Film_NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film_NotesApp.swift; sourceTree = "<group>"; };
+		4A11663A25CFEDB100BDA0CF /* FrameNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameNotesApp.swift; sourceTree = "<group>"; };
 		4A11663C25CFEDB100BDA0CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A11663E25CFEDB100BDA0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A11664125CFEDB100BDA0CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		4A11662E25CFEDB100BDA0CF = {
 			isa = PBXGroup;
 			children = (
-				4A11663925CFEDB100BDA0CF /* Film Notes */,
+				4A11663925CFEDB100BDA0CF /* FrameNotes */,
 				4A11663825CFEDB100BDA0CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,10 +61,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A11663925CFEDB100BDA0CF /* Film Notes */ = {
+		4A11663925CFEDB100BDA0CF /* FrameNotes */ = {
 			isa = PBXGroup;
 			children = (
-				4A11663A25CFEDB100BDA0CF /* Film_NotesApp.swift */,
+				4A11663A25CFEDB100BDA0CF /* FrameNotesApp.swift */,
 				4AF4D68425D01AE700F20A46 /* View */,
 				4AF4D68325D01ACB00F20A46 /* Keyboard */,
 				4A11663E25CFEDB100BDA0CF /* Assets.xcassets */,
@@ -73,7 +73,7 @@
 				4A11664525CFEDB100BDA0CF /* Film_Notes.xcdatamodeld */,
 				4A11664025CFEDB100BDA0CF /* Preview Content */,
 			);
-			path = "Film Notes";
+			path = FrameNotes;
 			sourceTree = "<group>";
 		};
 		4A11664025CFEDB100BDA0CF /* Preview Content */ = {
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4A11663225CFEDB100BDA0CF /* Build configuration list for PBXProject "Frame Notes" */;
+			buildConfigurationList = 4A11663225CFEDB100BDA0CF /* Build configuration list for PBXProject "FrameNotes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 				4AF4D67B25D010D300F20A46 /* KeyboardHeightPublisher.swift in Sources */,
 				4AF4D67825D0109C00F20A46 /* KeyboardAdaptive.swift in Sources */,
 				4A11665025CFF12B00BDA0CF /* ListView.swift in Sources */,
-				4A11663B25CFEDB100BDA0CF /* Film_NotesApp.swift in Sources */,
+				4A11663B25CFEDB100BDA0CF /* FrameNotesApp.swift in Sources */,
 				4A11664725CFEDB100BDA0CF /* Film_Notes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,10 +309,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"Film Notes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FrameNotes/Preview Content\"";
 				DEVELOPMENT_TEAM = VL4332W7S7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Film Notes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FrameNotes/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,10 +333,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"Film Notes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FrameNotes/Preview Content\"";
 				DEVELOPMENT_TEAM = VL4332W7S7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Film Notes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FrameNotes/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A11663225CFEDB100BDA0CF /* Build configuration list for PBXProject "Frame Notes" */ = {
+		4A11663225CFEDB100BDA0CF /* Build configuration list for PBXProject "FrameNotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A11664925CFEDB100BDA0CF /* Debug */,
